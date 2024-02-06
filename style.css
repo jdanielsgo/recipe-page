@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    background-color: hsl(30, 54%, 90%);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.flexx {
+    display: flex;
+    width: 45vw;
+    background-color: hsl(0,0%,100%);
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    margin: 70px;
+}
+
+.picture {
+    width: 40vw;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+
+h1, h2 {
+    font-family: 'Young Serif';
+}
+
+* {
+    font-family: 'Outfit';
+    color: hsl(30, 10%, 34%);
+}
+
+ul li {
+    list-style: none;
+}
+
+.preparation ul li::before {
+    content: "\25CF";
+    color: hsl(332, 51%, 32%);
+    display: inline-block;
+    width: 2em;
+    margin-left: -1em;
+}
+
+ul li::before {
+    content: "\25CF";
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 2em;
+    margin-left: -1em;
+}
+
+ol li {
+    list-style: none;
+    counter-increment: lista;
+    position: relative;
+}
+
+ol li::before {
+    content: counter(lista) ".";
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-weight: bold;
+}
+
+h1 {
+    color: hsl(0, 0%, 0%);
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+.inner {
+    display: flex;
+    width: 40vw;
+    flex-direction: column;
+}
+
+.preparation {
+    width: 38vw;
+    background-color: hsl(330, 100%, 98%);
+    align-items: center;
+    border-radius: 15px;
+    padding-left: 1.5vw;
+
+}
+
+#fin {
+    margin-bottom: 40px;
+}
+
+th {
+    color: hsl(14, 45%, 36%);
+}
+
+.separador {
+    width: 40vw;
+    height: 1px;
+    background-color: hsl(30, 18%, 87%);
+    margin: 20px 0;
+}
+
+td, th {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 10px;
+}
+
+.last {
+    border-bottom: 0;
+}
+
+td {
+    text-indent: 2vw;
+}
+
+span {
+    font-weight: bold;
+}
+
+@media (max-width: 375px) {
+    .flexx {
+        width: 100vw;
+        margin: 0;
+    }
+    
+    .inner {
+        width: 80vw;
+    }
+
+    .preparation {
+        width: 72vw;    
+    }
+    
+    .picture {
+        width: 100vw;
+        margin-top: 0;
+        border-radius: 0px;
+    }
+    .container {
+        padding: 0;
+    }
+    
+}
